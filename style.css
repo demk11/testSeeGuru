@@ -1,0 +1,111 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.main-block{
+	margin: min(10%, 50px) min(10%, 100px);
+}
+.main-block__div__list{
+	display: block;
+	opacity: 1;
+	transition: opacity .5s;
+}
+.main-block__h2{
+	font: 36px Helvetica, sans-serif;
+	letter-spacing: 1.25px;
+}
+
+.person{
+	display: flex;
+	width: 50%;
+	max-width: 800px;
+	min-width: 400px;
+	padding-top: 25px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid rgb(200, 200, 200);
+	font-family: Helvetica, sans-serif;
+	white-space: nowrap;
+	letter-spacing: 1.25px;
+}
+
+.person__div__name{
+	flex-basis: calc(100% - 250px);
+	line-height: 1.5;
+	overflow: auto;
+}
+.person__h2{
+	font-size: 21px;
+	line-height: 1.5;
+	font-weight: normal;
+}
+.person__p{
+	color: rgb(80, 80, 80);
+	font-size: 17px;
+	line-height: 1.5;
+}
+
+.person__div__id{
+	flex-basis: 50px;
+	text-align: right;
+}
+.person__span{
+	font-size: 17px;
+	line-height: 1.5;
+	color: rgb(80, 80, 80);
+}
+
+.person__div__buttons{
+	flex-basis: 200px;
+	text-align: right;
+}
+.person__button__view, .person__button__delete{
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+	padding: 15px 10px;
+	border: 0;
+	margin-right: 7.5px;
+	cursor: pointer;
+	font-size: 18px;
+	letter-spacing: 1.25px;
+	text-align: center;
+}
+.person__button__view{
+	color: rgb(225, 225, 225);
+	background: rgb(65, 65, 65);
+}
+.person__button__delete{
+	color: rgb(65, 65, 65);
+	background: rgb(225, 225, 225);
+}
+
+
+.main-block__div__view{
+	display: none;
+	opacity: 0;
+	font-family: Helvetica, sans-serif;
+	transition: opacity .5s;
+}
+.person__view{
+	margin-bottom: 25px;
+}
+.person__h2__view{
+	margin-bottom: 7.5px;
+	font: 36px Helvetica, sans-serif;
+	letter-spacing: 1.25px;
+}
+.person__h3__view{
+	margin-bottom: 5px;
+	font-size: 24px;
+	line-height: 1.5;
+	font-weight: normal;
+}
+.person__p__view{
+	font-size: 18px;
+	line-height: 1.5;
+}
+.person__a__view{
+	text-decoration-thickness: 1px;
+	text-decoration-color: rgb(65, 65, 65);
+	color: #000;
+}
